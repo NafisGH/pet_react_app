@@ -1,0 +1,6 @@
+// @ts-nocheck
+function Input({ placeholder }) {
+  return <input placeholder={placeholder} />;
+}
+
+export default Input;

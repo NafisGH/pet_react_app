@@ -1,20 +1,28 @@
 import "./App.css";
 import Button from "./components/Button/Button";
-import CardButton from "./components/Button/CardButton";
-import Header from "./components/Header";
+// import CardButton from "./components/Button/CardButton";
+import Header from "./components/Layout/Layout";
+import Input from "./components/Search/Search";
 import Paragraf from "./components/Paragraf";
 
 function App() {
-  const titleHeader = "Поиск";
   const textParagraf =
     "Введите название фильма, сериала или мультфильма для поиска и добавления в избранное.";
   const titleButton = "Поиск";
+  const placeholder = "Введите название";
+
+  const handleButtonClick = (click) => {
+    console.log(click);
+  };
 
   return (
     <>
-      <Header title={titleHeader}></Header>
+      <Header />
       <Paragraf searchParagraf={textParagraf} />
-      <Button titleButton={titleButton} />
+      <div>
+        <Input placeholder={placeholder} />
+        <Button titleButton={titleButton} clicked={handleButtonClick}></Button>
+      </div>
     </>
   );
 }
