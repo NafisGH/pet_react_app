@@ -1,8 +1,8 @@
 import "./App.css";
 import Button from "./components/Button/Button";
 // import CardButton from "./components/Button/CardButton";
-import Header from "./components/header/Header";
-import Input from "./components/input/Input";
+import Header from "./components/header/Layout";
+import Input from "./components/search/Search";
 import Paragraf from "./components/Paragraf";
 
 function App() {
