@@ -1,19 +1,20 @@
-import "./layout.css";
+import { useState } from "react";
+import SearchInput from "../Search/SearchInput";
 
-function Header() {
+function Layout() {
+  const placeholder = "Введите название";
+
+  const [searchFilm, setSearchFilm] = useState("");
+
   return (
-    <>
-      <div className="header">
-        <div className="icon">Icon</div>
-        <div>
-          <ul className="navigate">
-            <li>Поиск фильма</li>
-            <li>Мои фильмы</li>
-            <li>Войти</li>
-          </ul>
-        </div>
-      </div>
-    </>
+    <div>
+      <SearchInput
+        searchFilm={searchFilm}
+        setSearchFilm={setSearchFilm}
+        placeholder={placeholder}
+      />
+    </div>
   );
 }
-export default Header;
+
+export default Layout;
