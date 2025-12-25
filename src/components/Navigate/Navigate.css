@@ -1,0 +1,7 @@
+.nav {
+  display: flex;
+}
+.nav_list {
+  color: #fff;
+  margin-right: 10px;
+}
