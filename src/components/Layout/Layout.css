@@ -1,0 +1,13 @@
+.search-btn {
+  display: flex;
+  gap: 20px;
+}
+.search-block {
+  max-width: 588px;
+}
+h1 {
+  color: #fff;
+}
+.title_search {
+  color: gray;
+}
