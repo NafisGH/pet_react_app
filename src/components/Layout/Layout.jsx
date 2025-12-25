@@ -8,6 +8,10 @@ function Layout() {
 
   const [searchFilm, setSearchFilm] = useState("");
 
+  const handleSearch = () => {
+    console.log("Вы ищите фильм ", searchFilm);
+  };
+
   return (
     <div className="search-block">
       <h1>Поиск</h1>
@@ -21,7 +25,7 @@ function Layout() {
           setSearchFilm={setSearchFilm}
           placeholder={placeholder}
         />
-        <Button titleButton="Искать"></Button>
+        <Button titleButton="Искать" clicked={handleSearch}></Button>
       </div>
     </div>
   );

@@ -1,10 +1,8 @@
 import "./button.css";
 
 function Button({ titleButton, clicked }) {
-  const titleClick = "Поиск";
-
   const pressBtn = () => {
-    clicked(titleClick);
+    clicked();
   };
 
   return (
