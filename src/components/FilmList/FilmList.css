@@ -1,0 +1,12 @@
+.film-list {
+  /* Ширина будет 100%, но не меньше 300px и не больше 1200px */
+
+  width: clamp(300px, 95%, 1200px);
+  margin: 10px auto;
+  min-height: 100vh;
+  border: 1px solid black;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
