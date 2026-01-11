@@ -1,6 +1,6 @@
 import { useState } from "react";
+import style from "./FilmList.module.css";
 import CardFilm from "../CardFilm/CardFilm";
-import "./FilmList.css";
 
 export default function FilmList() {
   const arayListFilm = [
@@ -34,9 +34,9 @@ export default function FilmList() {
     },
   ];
 
-  const [cards, setCards] = useState(arayListFilm);
+  const [cards] = useState(arayListFilm);
   return (
-    <div className="film-list">
+    <div className={style["film-list"]}>
       {cards.map((film) => (
         <CardFilm
           key={film.id}
