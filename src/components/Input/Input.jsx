@@ -1,10 +1,10 @@
-import "./Input.css";
+import style from "./Input.module.css";
 
 function Input({ searchFilm, setSearchFilm, placeholder }) {
   return (
     <>
       <input
-        className="input"
+        className={style.input}
         value={searchFilm}
         onChange={(e) => setSearchFilm(e.target.value)}
         placeholder={placeholder}

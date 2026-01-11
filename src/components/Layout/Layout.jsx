@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Input from "../Input/Input";
 import Button from "../Button/Button";
-import "./Layout.css";
+import style from "./Layout.module.css";
 
 function Layout() {
   const placeholder = "Введите название";
@@ -13,13 +13,13 @@ function Layout() {
   };
 
   return (
-    <div className="search-block">
+    <div className={style["search-block"]}>
       <h1>Поиск</h1>
-      <div className="title_search">
+      <div className={style["title_search"]}>
         Введите название фильма, сериала или мультфильма для поиска и добавления
         в избранное.
       </div>
-      <div className="search-btn">
+      <div className={style["search-btn"]}>
         <Input
           searchFilm={searchFilm}
           setSearchFilm={setSearchFilm}
